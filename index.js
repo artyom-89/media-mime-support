@@ -5,7 +5,7 @@ function addMimeChecks(table,mime,desc) {
 	var mediasource_result;
 	video_result = video.canPlayType(mime);
 	try { 
-		mediasource_result = MediaSource.isTypeSupported(mime); 
+		mediasource_result = ManagedMediaSource.isTypeSupported(mime); 
 	} catch (e) { 
 		mediasource_result = e.message; 
 	}
